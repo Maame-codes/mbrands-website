@@ -34,17 +34,17 @@ const App = () => {
   useEffect(() => {
     // This finds the existing favicon link element
     let link = document.querySelector("link[rel~='icon']");
-    
+
     // If it doesn't exist, create it
     if (!link) {
-      link = document.createElement('link');
-      link.rel = 'icon';
-      document.getElementsByTagName('head')[0].appendChild(link);
+      link = document.createElement("link");
+      link.rel = "icon";
+      document.getElementsByTagName("head")[0].appendChild(link);
     }
-    
-    // Set the favicon to your image. 
+
+    // Set the favicon to your image.
     // IMPORTANT: Place your image in the 'public' folder and name it 'favicon.png'
-    link.href = '/favicon.png'; 
+    link.href = "/favicon.png";
   }, []);
 
   // Smooth Scroll Helper
@@ -565,13 +565,13 @@ const App = () => {
                 </h3>
                 <div className="flex gap-4">
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/company/m-brands-ltd/?viewAsMember=true"
                     className="p-3 bg-gray-100 text-gray-600 rounded-lg hover:bg-[#8c52ff] hover:text-white transition-all"
                   >
                     <Linkedin size={20} />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.instagram.com/mbrands_01/"
                     className="p-3 bg-gray-100 text-gray-600 rounded-lg hover:bg-[#8c52ff] hover:text-white transition-all"
                   >
                     <Instagram size={20} />
