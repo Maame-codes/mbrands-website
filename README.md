@@ -1,16 +1,94 @@
-# React + Vite
+M. Brands | Where Vision Meets Virtual Reality
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, fully responsive creative agency website built with React, Tailwind CSS, and Vite. This project serves as the digital storefront for M. Brands, showcasing services, portfolio items, and client testimonials with a sleek, user-centric design.
 
-Currently, two official plugins are available:
+🚀 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Framework: React (v18+)
 
-## React Compiler
+Build Tool: Vite
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Styling: Tailwind CSS (v3)
 
-## Expanding the ESLint configuration
+Icons: Lucide React
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Fonts: Poppins (via Google Fonts)
+
+✨ Features
+
+Responsive Design: Fully adaptable layout for mobile, tablet, and desktop.
+
+Dynamic Portfolio: Filterable portfolio section (Web Design, Branding, Logos, etc.).
+
+Smooth Navigation: Smooth scrolling to specific sections (Hero, Services, About, Contact).
+
+Interactive UI: Hover effects, mobile navigation menu, and dynamic header transparency on scroll.
+
+Dynamic Favicon: Programmatically updates the browser tab icon.
+
+🛠️ Installation & Setup
+
+Follow these steps to run the project locally on your machine.
+
+1. Clone the repository
+
+git clone [https://github.com/Maame-codes/mbrands-website.git](https://github.com/Maame-codes/mbrands-website.git)
+cd mbrands-website
+
+
+2. Install Dependencies
+
+npm install
+
+
+3. Run the Development Server
+
+npm run dev
+
+
+Open your browser and navigate to http://localhost:5173.
+
+📂 Project Structure
+
+mbrands-website/
+├── public/
+│   └── favicon.png      # Browser tab icon
+├── src/
+│   ├── App.jsx          # Main application component
+│   ├── index.css        # Tailwind directives & global styles
+│   └── main.jsx         # Entry point
+├── tailwind.config.js   # Tailwind configuration
+├── postcss.config.js    # PostCSS configuration
+└── package.json         # Project dependencies
+
+
+🎨 Customization
+
+Changing Images
+
+The project currently uses high-quality placeholder images from Unsplash. To use your own images:
+
+Place your images in the public/ folder.
+
+Update the src paths in App.jsx:
+
+// Before
+img: "[https://images.unsplash.com/](https://images.unsplash.com/)..."
+
+// After
+img: "/my-local-image.jpg"
+
+
+Updating Colors
+
+The primary brand color is #8c52ff (Purple). You can find and replace this hex code in App.jsx or extend the tailwind.config.js file to add a custom color palette.
+
+🔧 Troubleshooting
+
+Issue: [plugin:vite:css] [postcss] It looks like you're trying to use tailwindcss directly...
+
+Fix: This project uses Tailwind CSS v3. If you accidentally upgraded to v4, run this command to restore compatibility:
+
+npm install -D tailwindcss@3.4.17
+
+
