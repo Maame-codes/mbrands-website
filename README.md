@@ -91,4 +91,5 @@ Fix: This project uses Tailwind CSS v3. If you accidentally upgraded to v4, run 
 
 npm install -D tailwindcss@3.4.17
 
-
+👨‍💻 Credits
+Built by: Maame Afua A.P Fordjour
